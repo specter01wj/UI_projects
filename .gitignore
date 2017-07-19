@@ -1,5 +1,14 @@
-node_modules/
-.DS_Store
-runtime
+*.iml
+*.m4a
 target
 .idea
+build
+nbproject
+conf/*.properties
+node_modules
+nbproject
+npm-debug.log
+.DS_Store
+runtime
+symlinks
+# IntelliJ
