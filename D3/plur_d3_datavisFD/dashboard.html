@@ -1,0 +1,37 @@
+<html>
+    <head>
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    	<link href='css/style.css' rel='stylesheet' type='text/css'>
+        <script src="js/d3.v3.js" charset="utf-8"></script>   
+    </head>
+    <body>
+
+    	<h1 id="dashTitle">2017 Sales Dashboard</h1>
+
+    	<div id="topChart" style="float: left; width: 800px;">
+			<h2 style="margin-left:50px; float:left;">Sales by Month (colored by profit)</h1>				
+			<svg id="barChartLegend"></svg>
+	    	<svg id="barChart"></svg>
+	    </div>
+
+	    <div id="bottomLeft" style="float:left; width: 350px; margin-left: 50px;"></div>
+
+	    <div id="bottomRight" style="float:left; width: 400px;">
+	    	<h2>Sales by State</h2>	    	    		
+	    </div>
+    
+	    <!-- global functions -->
+	    <script src="js/functions.js"></script>   
+
+    	<!-- build bar chart -->
+    	<script src="js/top-bar.js"></script>   
+
+        <!-- build sparklines -->
+        <script src="js/sparklines.js"></script>   
+
+        <!-- build map -->
+        <script src="js/map.js"></script>   
+
+
+    </body>
+</html>
