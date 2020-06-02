@@ -1,0 +1,10 @@
+<h1>Regions & Country Detail</h1>
+
+<div class='container'>
+  
+  <app-regiions (rs)="onRegionSelect($event)"></app-regiions>
+
+  <app-country-detail *ngIf="showCountryDetail" [cd]="countryDetail[0]"></app-country-detail>
+
+</div>
+

@@ -1,0 +1,19 @@
+<div>
+  <label>Select Regions: </label>
+  <select (change)="filterRegions($event.target.value)">
+    <option value="0">--No Selection--</option>
+    <option *ngFor="let region of regions" value={{region}}>
+      {{region}}
+    </option>
+  </select>
+</div>
+
+<div *ngIf="isCountryList">
+  <label>Select Country: </label>
+  <select (change)="filterCountry($event.target.value)">
+    <option value="0">--No Selection--</option>
+    <option *ngFor="let contry of filteredCountry" value={{contry.name}}>
+      {{contry.name}}
+    </option>
+  </select>
+</div>
