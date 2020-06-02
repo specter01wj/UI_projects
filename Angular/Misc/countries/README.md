@@ -6,9 +6,9 @@ By James Wang
 <article class="markdown-body entry-content container-lg" itemprop="text">
 	<h1><a id="user-content-sb-admin-angular" class="anchor" aria-hidden="true"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a>Regions and Countries Angular</h1>
 	<p>Regions and Countries Angular is a free and open-sourced Bootstrap themed Angular 9 project.</p>
-	<p>Regions and Countries Angular comes with a base implementation of navigation and layouts.</p>
+	<p>Regions and Countries Angular comes with a base implementation of dropdowns and tables.</p>
 	<h2><a id="user-content-quick-start" class="anchor" aria-hidden="true" href="#quick-start"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a>Quick Start</h2>
-	<div class="highlight highlight-source-shell"><pre>git clone git@github.com:startbootstrap/sb-admin-angular.git
+	<div class="highlight highlight-source-shell"><pre>git clone https://github.com/specter01wj/UI_projects/tree/master/Angular/Misc/countries.git</pre>
 	<span class="pl-c1">cd</span> sb-admin-angular
 	npm install
 	npm start</pre></div>
@@ -23,7 +23,7 @@ By James Wang
 	<h3><a id="user-content-e2e" class="anchor" aria-hidden="true" href="#e2e"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a>e2e</h3>
 	<div class="highlight highlight-source-shell"><pre>npm run e2e</pre></div>
 	<h2><a id="user-content-production" class="anchor" aria-hidden="true" href="#production"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"></svg></a>Production</h2>
-	<p>SB Admin Angular come with a production ready Dockerfile and build scripts.</p>
+	<p>Regions and Countries Angular come with a production ready Dockerfile and build scripts.</p>
 	<p>You can get Docker <a href="https://www.docker.com/get-started" rel="nofollow">here</a></p>
 	<div class="highlight highlight-source-shell"><pre>npm run docker:build
 	npm run docker:run</pre></div>
