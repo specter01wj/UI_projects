@@ -1,1 +1,36 @@
-<p>currency-converter works!</p>
+<div class="converter">
+  <h2>Currency Converter</h2>
+
+  <div class="form">
+    <label>Base Currency:
+      <select [(ngModel)]="baseCurrency()" (ngModelChange)="baseCurrency.set($event); onInputChange()">
+        <option>USD</option>
+        <option>EUR</option>
+        <option>GBP</option>
+        <option>JPY</option>
+      </select>
+    </label>
+
+    <label>Target Currency:
+      <select [(ngModel)]="targetCurrency()" (ngModelChange)="targetCurrency.set($event); onInputChange()">
+        <option>USD</option>
+        <option>EUR</option>
+        <option>GBP</option>
+        <option>JPY</option>
+      </select>
+    </label>
+
+    <label>Amount:
+      <input type="number" [(ngModel)]="amount()" (ngModelChange)="amount.set($event); onInputChange()" />
+    </label>
+  </div>
+
+  <div class="result">
+    <p *ngIf="loading()">Loading...</p>
+    <p *ngIf="error()">{{ error() }}</p>
+    <p *ngIf="result() !== null">
+      {{ amount() }} {{ baseCurrency() }} = <strong>{{ result() }} {{ targetCurrency() }}</strong>
+    </p>
+    <p *ngIf="lastUpdated()">Last updated: {{ lastUpdated() | date:'short' }}</p>
+  </div>
+</div>
