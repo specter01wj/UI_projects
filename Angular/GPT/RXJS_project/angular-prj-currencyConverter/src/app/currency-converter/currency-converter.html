@@ -46,6 +46,6 @@
       {{ amount() }} {{ baseCurrency() }} = <strong>{{ result() }} {{ targetCurrency() }}</strong>
     </p>
 
-    <p *ngIf="lastUpdated()">Last updated: {{ lastUpdated() | date: 'short' }}</p>
+    <p *ngIf="lastUpdated() instanceof Date">Last updated: {{ lastUpdated() | date: 'short' }}</p>
   </div>
 </div>
