@@ -6,10 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CurrencyService {
+  private readonly BASE_URL = 'https://api.exchangerate.host';
+
   constructor(private http: HttpClient) {}
 
   convertCurrency(from: string, to: string, amount: number): Observable<any> {
-    const url = `https://api.exchangerate.host/convert?from=${from}&to=${to}&amount=${amount}`;
+    const url = `${this.BASE_URL}/convert?from=${from}&to=${to}&amount=${amount}`;
     return this.http.get<any>(url);
   }
 }
