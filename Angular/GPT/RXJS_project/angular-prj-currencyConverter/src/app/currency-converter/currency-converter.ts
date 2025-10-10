@@ -82,4 +82,9 @@ export class CurrencyConverter {
   onInputChange() {
     this.trigger$.next();
   }
+
+  get isValidLastUpdated(): boolean {
+    const date = this.lastUpdated();
+    return date instanceof Date && !isNaN(date.getTime());
+  }
 }
