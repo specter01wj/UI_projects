@@ -63,7 +63,7 @@ export class CurrencyConverter {
           ).pipe(
             tap((res) => {
               this.result.set(res.result);
-              this.lastUpdated.set(new Date(res.date));
+              this.lastUpdated.set(new Date(res.info.timestamp * 1000));
               this.loading.set(false);
             }),
             catchError((err) => {
